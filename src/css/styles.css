@@ -68,12 +68,12 @@ body {
 }
 
 .header-nav > ul > li > a:active {
-    color: #E5E5E5;
+    color: #56C7F7;
     text-decoration: none;
 }
 
 .header-nav > ul > li > a:visited {
-    color: #fff;
+    color: #56C7F7;
     text-decoration: none;
 }
 
