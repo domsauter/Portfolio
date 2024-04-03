@@ -4,11 +4,14 @@ html {
 
 @font-face {
     font-family: 'MeineSchriftart';
-    src: url('^/src/schriftart/Roboto-thin.ttf') format('ttf'),
-         url('^/src/schriftart/Roboto-Regular.ttf') format('ttf');
-         /*url('pfad/zur/schriftart.woff') format('woff');
-     Weitere Formatoptionen, falls erforderlich 
-     Julius sans one*/
+    src: url('^/src/schriftart/Roboto/Roboto-thin.ttf') format('ttf'),
+         url('^/src/schriftart/Roboto/Roboto-Regular.ttf') format('ttf');
+         url('^/src/schriftart/Nixie_One/NixieOne-Regular.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'NixieOne';
+    src: url('^/src/schriftart/Nixie_One/NixieOne-Regular.ttf') format('ttf');
   }
 
 body {
@@ -90,7 +93,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 3rem;
-    background-color: #ffffff;
 }
 
 .container img {
@@ -100,16 +102,17 @@ body {
     margin-right: 1rem;
 }
 
-.header-content {
-    font-size: 2rem;
-}
-
-.header-content h1 {
-    font-size: 2rem;
+.container > div > h1 {
+    font-size: 3rem;
     margin: 0;
 }
 
-.header-content p {
+.container > div > h1 > span {
+    font-family: "NixieOne", sans-serif;
+    color: #e5e5e5;
+}
+
+.container > div > p {
     font-size: 1rem;
     color: #E5E5E5;
     margin: 0;
