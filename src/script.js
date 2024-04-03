@@ -8,6 +8,12 @@ const greetings = {
     "zh": ["你好,", "我是Dominik"],
     "ru": ["Привет,", "Я - Доминик"],
     "jp": ["こんにちは,", "私はドミニクです"]
+    "pt": ["Oi,", "Eu sou Dominik"],
+    "fr": ["Salut,", "Je suis Dominik"],
+    "tr": ["Merhaba,", "Ben Dominik'im"],
+    "ar": ["مرحبا,", "أنا دومينيك"],
+    "hi": ["नमस्ते,", "मैं डोमिनिक हूँ"],
+    "ko": ["안녕하세요,", "나는 도미닉입니다"]
 };
 
 function getRandomGreeting(language) {
