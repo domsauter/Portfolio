@@ -136,30 +136,3 @@ body {
         margin-right: 3rem; /* Raum zwischen Bild und rechtem Rand */
     }
 }
-
-/* 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 3rem;
-}
-
-.container img {
-    height: auto;
-    max-height: 250px;
-    width: auto;
-    margin-right: 3rem;
-}
-
-.container > div > h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.container > div > p {
-    font-size: 1rem;
-    color: #E5E5E5;
-    margin: 0;
-}
- */
