@@ -4,15 +4,14 @@ html {
 
 @font-face {
     font-family: 'MeineSchriftart';
-    src: url('^/src/schriftart/Roboto/Roboto-thin.ttf') format('ttf'),
-         url('^/src/schriftart/Roboto/Roboto-Regular.ttf') format('ttf');
-         url('^/src/schriftart/Nixie_One/NixieOne-Regular.ttf') format('ttf');
+    src: url('^/src/schriftart/Roboto/Roboto-thin.ttf') format('truetype'),
+         url('^/src/schriftart/Roboto/Roboto-Regular.ttf') format('truetype');
   }
 
-  @font-face {
+@font-face {
     font-family: 'NixieOne';
-    src: url('^/src/schriftart/Nixie_One/NixieOne-Regular.ttf') format('ttf');
-  }
+    src: url('^/src/schriftart/Nixie_One/NixieOne-Regular.ttf') format('truetype');
+ }
 
 body {
     margin: 0;
