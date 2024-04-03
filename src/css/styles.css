@@ -28,7 +28,7 @@ body {
     height: 50px;
     width: auto;    
     position: absolute;
-    left: 3rem;
+    left: 1.5rem;
     top: 10px; 
     z-index: 1;       
 }
@@ -39,7 +39,7 @@ body {
     position: absolute;
     top: 50%; /* Zentrierung der UL-Liste vertikal */
     transform: translateY(-50%); /* Zentrierung der UL-Liste vertikal */
-    right: 2rem; /* Abstand zum rechten Rand */
+    right: 1.5rem; /* Abstand zum rechten Rand */
     width: auto; /* Breite automatisch anpassen */
     max-width: calc(100% - 6rem); /* Maximale Breite, um nicht über den rechten Rand zu gehen */
     overflow: hidden; /* Überlauf verstecken */
@@ -98,7 +98,7 @@ body {
     }
 
     .header-nav > img {
-        left: 1rem; /* Reduzierte Positionierung des Logos */
+        left: 3rem; /* Reduzierte Positionierung des Logos */
         top: 0.5rem; /* Reduzierte Positionierung des Logos */
     }
 
