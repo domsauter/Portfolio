@@ -8,85 +8,136 @@ html {
          url('^/src/schriftart/Roboto/Roboto-Regular.ttf') format('truetype');
   }
 
-@font-face {
-    font-family: 'NixieOne';
-    src: url('^/src/schriftart/Nixie_One/NixieOne-Regular.ttf') format('truetype');
- }
-
 body {
     margin: 0;
     background-color: #252850;
     color: #56C7F7;
     font-family: 'MeineSchriftart', sans-serif;
-    /*background-color: #0E14B2;*/
 }
 
-/* color: #56C7F7; */
-
 /* === NAVIGATIONSLEISTE === */
+.header-nav {
+    width: 100%;
+    height: 70px; /* Feste Höhe von 70px */
+    background-color: #232648;
+    position: relative;
+    font-size: 1rem;
+}
 
 .header-nav > img {
     height: 50px;
     width: auto;    
     position: absolute;
     left: 3rem;
-    top: 10px;        
-}
-
-.header-nav {
-    width: 100%;
-    height: 70px;
-    background-color: #232648;
-    position: relative;
-    font-size: 1rem;
+    top: 10px; 
+    z-index: 1;       
 }
 
 .header-nav > ul {
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 3rem;
-    height: 100%;
+    top: 50%; /* Zentrierung der UL-Liste vertikal */
+    transform: translateY(-50%); /* Zentrierung der UL-Liste vertikal */
+    right: 2rem; /* Abstand zum rechten Rand */
+    width: auto; /* Breite automatisch anpassen */
+    max-width: calc(100% - 6rem); /* Maximale Breite, um nicht über den rechten Rand zu gehen */
+    overflow: hidden; /* Überlauf verstecken */
 }
 
 .header-nav > ul > li {
-    display:inline-block;
-    height: 100%;
-    padding: 0 .2rem 0 .2rem;
+    display: inline-block;
+    padding: 0 .5rem; /* Raum zwischen den Menüelementen */
 }
 
 .header-nav > ul > li > a {
-    display: inline-block;
-    margin-top: 1.6rem;
-}
-
-.header-nav > ul > li > a:link {
     color: #56C7F7;
     text-decoration: none;
+    white-space: nowrap; /* Text wird nicht umgebrochen */
 }
 
 .header-nav > ul > li > a:hover {
     color: #E5E5E5;
-    text-decoration: none;
 }
-
-.header-nav > ul > li > a:active {
-    color: #56C7F7;
-    text-decoration: none;
-}
-
-.header-nav > ul > li > a:visited {
-    color: #56C7F7;
-    text-decoration: none;
-}
-
-.header-nav > ul > li > a:visited:hover {
-    color: #E5E5E5;
-    text-decoration: none;
-}
-
 /* === HEADER === */
 
+.container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container img {
+    max-width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+.container > div {
+    flex-grow: 1; /* Textbereich linear zum Bild wachsen lassen */
+}
+
+.container > div > h1 {
+    font-size: 2rem;
+    margin:  0 0 0 3rem;
+    text-align: left; /* Text linksbündig ausrichten */
+}
+
+.container > div > p {
+    font-size: 1rem;
+    color: #E5E5E5;
+    margin: .6rem 0 0 3rem;
+    text-align: left; /* Text linksbündig ausrichten */
+}
+
+/* Media Query für größere Bildschirme */
+@media screen and (min-width: 768px) {
+    .header-nav {
+        height: 70px; /* Beibehalten der festen Höhe von 70px */
+    }
+
+    .header-nav > img {
+        left: 1rem; /* Reduzierte Positionierung des Logos */
+        top: 0.5rem; /* Reduzierte Positionierung des Logos */
+    }
+
+    .header-nav > ul {
+        display: block; /* Anzeigen der UL-Liste */
+        position: absolute; /* Positionierung */
+        width: auto; /* Breite automatisch anpassen */
+        background-color: #232648; /* Hintergrundfarbe setzen */
+        text-align: center; /* Zentrierung des Dropdown-Menüs */
+        position: absolute;
+        top: 50%; /* Position unterhalb der Navigationsleiste */
+        right: 3rem; /* Abstand zum rechten Rand */
+    }
+
+    .header-nav > ul > li {
+        display: inline-block; /* Inline-Blockelemente */
+        padding: 0 0.5rem; /* Raum zwischen den Menüelementen */
+    }
+
+    .header-nav > ul > li > a {
+        color: #56C7F7;
+        text-decoration: none;
+    }
+
+    .header-nav > ul > li > a:hover {
+        color: #E5E5E5;
+    }
+
+    .container {
+        justify-content: space-between; /* Platz zwischen Text und Bild */
+    }
+
+    .container img {
+        margin-left: auto;
+        margin-right: 3rem; /* Raum zwischen Bild und rechtem Rand */
+    }
+}
+
+/* 
 .container {
     display: flex;
     align-items: center;
@@ -96,9 +147,9 @@ body {
 
 .container img {
     height: auto;
-    max-height: 150px;
+    max-height: 250px;
     width: auto;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 .container > div > h1 {
@@ -106,41 +157,9 @@ body {
     margin: 0;
 }
 
-.container > div > h1 > span {
-    font-family: "NixieOne", sans-serif;
-    color: #e5e5e5;
-}
-
 .container > div > p {
     font-size: 1rem;
     color: #E5E5E5;
     margin: 0;
 }
-
-/*
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-header {
-    display: block;
-    font-size: 3rem;
-    margin-top: 3rem;
-    margin-left: 3rem;
-}
-
-header > img {
-    height: 150px;
-    width: auto;
-    float: right;
-    margin-right: 3rem;
-}
-
-header > div > p {
-    font-size: 1rem;
-    color: #E5E5E5;
-    margin-top: .5rem;
-}
-*/
+ */

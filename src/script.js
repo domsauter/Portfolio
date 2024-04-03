@@ -1,19 +1,19 @@
 const greetings = {
-    "de": ["<span>Hallo,<br></span>", "ich bin Dominik"],
-    "ba": ["<span>Servus,<br></span>", "i bin da Dominik"],
-    "bw": ["<span>Griaß Di,<br></span>", "i benn dr Dominik"],
-    "en": ["<span>Hi,<br></span>", "I'm Dominik"],
-    "it": ["<span>Ciao,<br></span>", "Io sono Dominik"],
-    "es": ["<span>Hola,<br></span>", "Soy Dominik"],
-    "zh": ["<span>你好,<br></span>", "我是Dominik"],
-    "ru": ["<span>Привет,<br></span>", "Я - Доминик"],
-    "jp": ["<span>こんにちは,<br></span>", "私はドミニクです"],
-    "pt": ["<span>Oi,<br></span>", "Eu sou Dominik"],
-    "fr": ["<span>Salut,<br></span>", "Je suis Dominik"],
-    "tr": ["<span>Merhaba,<br></span>", "Ben Dominik'im"],
-    "ar": ["<span>مرحبا,<br></span>", "أنا دومينيك"],
-    "hi": ["<span>नमस्ते,<br></span>", "मैं डोमिनिक हूँ"],
-    "ko": ["<span>안녕하세요,<br></span>", "나는 도미닉입니다"]
+    "de": ["Hallo,<br>", "ich bin Dominik"],
+    "ba": ["Servus,<br>", "i bin da Dominik"],
+    "bw": ["Griaß Di,<br>", "i benn dr Dominik"],
+    "en": ["Hi,<br>", "I'm Dominik"],
+    "it": ["Ciao,<br>", "Io sono Dominik"],
+    "es": ["Hola,<br>", "Soy Dominik"],
+    "zh": ["你好,<br>", "我是Dominik"],
+    "ru": ["Привет,<br>", "Я - Доминик"],
+    "jp": ["こんにちは,<br>", "私はドミニクです"],
+    "pt": ["Oi,<br>", "Eu sou Dominik"],
+    "fr": ["Salut,<br>", "Je suis Dominik"],
+    "tr": ["Merhaba,<br>", "Ben Dominik'im"],
+    "ar": ["مرحبا,<br>", "أنا دومينيك"],
+    "hi": ["नमस्ते,<br>", "मैं डोमिनिक हूँ"],
+    "ko": ["안녕하세요,<br>", "나는 도미닉입니다"]
 };
 
 function getRandomGreeting(language) {
@@ -28,4 +28,4 @@ function updateGreeting() {
     greetingElement.innerHTML = getRandomGreeting(randomLanguage);
 }
 
-setInterval(updateGreeting, 10000);
+setInterval(updateGreeting, 3000);
