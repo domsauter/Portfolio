@@ -1,1 +1,3 @@
-hallo
+header bereich in gridsystem umbauen,
+3 breakpoints für media queries,
+Navigationsleiste auf media query umbauen 
