@@ -4,8 +4,8 @@ html {
 
 @font-face {
     font-family: 'MeineSchriftart';
-    src: url('^/src/schriftart/Roboto/Roboto-thin.ttf') format('truetype'),
-         url('^/src/schriftart/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('../src/schriftart/Roboto/Roboto-thin.ttf') format('truetype'),
+         url('../src/schriftart/Roboto/Roboto-Regular.ttf') format('truetype');
   }
 
 body {
