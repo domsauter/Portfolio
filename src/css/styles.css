@@ -4,8 +4,8 @@ html {
 
 @font-face {
     font-family: 'MeineSchriftart';
-    src: url('../src/schriftart/Roboto/Roboto-thin.ttf') format('truetype'),
-         url('../src/schriftart/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('../schriftart/Roboto/Roboto-thin.ttf') format('truetype'),
+         url('../schriftart/Roboto/Roboto-Regular.ttf') format('truetype');
   }
 
 body {
@@ -59,80 +59,66 @@ body {
 .header-nav > ul > li > a:hover {
     color: #E5E5E5;
 }
+
 /* === HEADER === */
 
 .container {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
-
-.container img {
-    max-width: 20%;
-    height: auto;
+    width: 100%;
     margin-left: auto;
-    margin-right: 3rem;
+    margin-right: auto;
 }
 
-.container > div {
-    flex-grow: 1; /* Textbereich linear zum Bild wachsen lassen */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
-.container > div > h1 {
-    font-size: 2rem;
-    margin:  0 0 0 3rem;
-    text-align: left; /* Text linksbündig ausrichten */
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: .8rem;
 }
 
-.container > div > p {
-    font-size: 1rem;
-    color: #E5E5E5;
-    margin: .6rem 0 0 3rem;
-    text-align: left; /* Text linksbündig ausrichten */
+.col-3 img {
+    width: 0;
+    height: 100%;
+    padding: 100%;
+    float: right;
 }
 
-/* Media Query für größere Bildschirme */
-@media screen and (min-width: 768px) {
-    .header-nav {
-        height: 70px; /* Beibehalten der festen Höhe von 70px */
-    }
+.col-1 { width: 16.667%;}
+.col-2 { width: 33.333%;}
+.col-3 { width: 50%;    }
+.col-6 { width: 100%;   }
 
-    .header-nav > img {
-        left: 3rem; /* Reduzierte Positionierung des Logos */
-        top: 0.5rem; /* Reduzierte Positionierung des Logos */
-    }
+/* 
+=== WICHTIGE BREAKPOINTS ===
 
-    .header-nav > ul {
-        display: block; /* Anzeigen der UL-Liste */
-        position: absolute; /* Positionierung */
-        width: auto; /* Breite automatisch anpassen */
-        background-color: #232648; /* Hintergrundfarbe setzen */
-        text-align: center; /* Zentrierung des Dropdown-Menüs */
-        position: absolute;
-        top: 50%; /* Position unterhalb der Navigationsleiste */
-        right: 3rem; /* Abstand zum rechten Rand */
-    }
+480px iPhone Querformat
+768px iPad Hochformat
+1024px iPad Querformat
 
-    .header-nav > ul > li {
-        display: inline-block; /* Inline-Blockelemente */
-        padding: 0 0.5rem; /* Raum zwischen den Menüelementen */
-    }
+*/
 
-    .header-nav > ul > li > a {
-        color: #56C7F7;
-        text-decoration: none;
-    }
+@media (max-width: 1024px) {
 
-    .header-nav > ul > li > a:hover {
-        color: #E5E5E5;
-    }
+    .col-1 { width: 33.333%;}
 
-    .container {
-        justify-content: space-between; /* Platz zwischen Text und Bild */
-    }
+}
 
-    .container img {
-        margin-left: auto;
-        margin-right: 3rem; /* Raum zwischen Bild und rechtem Rand */
-    }
+@media (max-width: 768px) {
+
+    .col-1 { width: 50%;}
+    .col-2 { width: 100%;}
+    .col-3 { width: 100%;}
+
+}
+
+@media (max-width: 480px) {
+
+    .col-1 { width: 100%;}
+    .col-2 { width: 100%;}
+    .col-3 { width: 100%;}
+
 }
