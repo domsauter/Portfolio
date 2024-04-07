@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
     background-color: #252850;
-    color: #56C7F7;
+    color: #fff;
     font-family: 'MeineSchriftart', sans-serif;
 }
 
@@ -51,19 +51,19 @@ body {
 }
 
 .header-nav > ul > li > a {
-    color: #56C7F7;
+    color: #fff;
     text-decoration: none;
     white-space: nowrap; /* Text wird nicht umgebrochen */
 }
 
 .header-nav > ul > li > a:hover {
-    color: #E5E5E5;
+    color: #56C7F7;
 }
 
 /* === HEADER === */
 
 .container {
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -74,23 +74,43 @@ body {
     display: block;
 }
 
+.container #greeting {
+    color: #56C7F7;
+}
+
 [class*="col-"] {
     float: left;
     min-height: 1px;
     padding: .8rem;
+    box-sizing: border-box;
 }
 
 .col-3 img {
-    width: 0;
-    height: 100%;
-    padding: 100%;
-    float: right;
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Dies stellt sicher, dass das Bild nicht breiter als die col-3 wird */
+    display: block; /* Dies stellt sicher, dass das Bild richtig angezeigt wird */
 }
 
 .col-1 { width: 16.667%;}
 .col-2 { width: 33.333%;}
 .col-3 { width: 50%;    }
 .col-6 { width: 100%;   }
+
+/* === ABOUT ME */
+
+.about-me .container {
+    margin-top: 4rem;
+}
+
+h3 {
+    color: #56C7F7;
+    margin:  0 0 1rem .8rem;
+}
+
+.about-me .row {
+    background-color: #56C7F7;
+}
 
 /* 
 === WICHTIGE BREAKPOINTS ===
@@ -99,21 +119,15 @@ body {
 768px iPad Hochformat
 1024px iPad Querformat
 
-*/
-
 @media (max-width: 1024px) {
-
-    .col-1 { width: 33.333%;}
 
 }
 
 @media (max-width: 768px) {
 
-    .col-1 { width: 50%;}
-    .col-2 { width: 100%;}
-    .col-3 { width: 100%;}
-
 }
+
+*/
 
 @media (max-width: 480px) {
 
