@@ -5,27 +5,25 @@ const greetings = {
     "en": ["Hi,<br>", "I'm Dominik"],
     "it": ["Ciao,<br>", "Io sono Dominik"],
     "es": ["Hola,<br>", "Soy Dominik"],
-    "zh": ["你好,<br>", "我是Dominik"],
-    "ru": ["Привет,<br>", "Я - Доминик"],
-    "jp": ["こんにちは,<br>", "私はドミニクです"],
     "pt": ["Oi,<br>", "Eu sou Dominik"],
     "fr": ["Salut,<br>", "Je suis Dominik"],
-    "tr": ["Merhaba,<br>", "Ben Dominik'im"],
-    "ar": ["مرحبا,<br>", "أنا دومينيك"],
-    "hi": ["नमस्ते,<br>", "मैं डोमिनिक हूँ"],
-    "ko": ["안녕하세요,<br>", "나는 도미닉입니다"]
+    "tr": ["Merhaba,<br>", "Ben Dominik'im"]
 };
 
-function getRandomGreeting(language) {
-    const greeting = greetings[language];
+function getRandomGreeting() {
+    const languages = Object.keys(greetings);
+    const randomLanguage = languages[Math.floor(Math.random() * languages.length)];
+    const greeting = greetings[randomLanguage];
     return `${greeting[0]}${greeting[1]}`;
 }
 
 function updateGreeting() {
-    const languages = Object.keys(greetings);
-    const randomLanguage = languages[Math.floor(Math.random() * languages.length)];
     const greetingElement = document.getElementById('greeting');
-    greetingElement.innerHTML = getRandomGreeting(randomLanguage);
+    greetingElement.innerHTML = getRandomGreeting();
 }
 
-setInterval(updateGreeting, 3000);
+// Sofortigen zufälligen Satz anzeigen
+updateGreeting();
+
+// Alle 10 Sekunden aktualisieren
+setInterval(updateGreeting, 10000);
