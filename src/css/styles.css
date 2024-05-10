@@ -63,7 +63,6 @@ body {
 }
 
 /* === HEADER === */
-
 .container {
     width: 95%;
     margin-left: auto;
@@ -80,9 +79,10 @@ body {
     /*color: #56C7F7;*/
     color: #543e29;
     margin-bottom: .5rem;
+    font-size: 3rem;
 }
 
-.col-3 p {
+.col-2 p {
     margin-top: 0;
 }
 
@@ -93,10 +93,10 @@ body {
     box-sizing: border-box;
 }
 
-.col-3 img {
+.col-2 img {
     width: 100%;
     height: auto;
-    max-width: 250px; /* Dies stellt sicher, dass das Bild nicht breiter als die col-3 wird */
+    max-width: 175px; /* Dies stellt sicher, dass das Bild nicht breiter als die col-2 wird */
     display: block; /* Dies stellt sicher, dass das Bild richtig angezeigt wird */
 }
 
