@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 @font-face {
@@ -19,8 +19,7 @@ body {
 /* === NAVIGATIONSLEISTE === */
 .header-nav {
     width: 100%;
-    height: 70px; /* Feste Höhe von 70px */
-    /*background-color: #232648;*/
+    height: 60px;
     background-color: #968260;
     position: relative;
     font-size: 1rem;
@@ -31,37 +30,60 @@ body {
     width: auto;    
     position: absolute;
     left: 1.5rem;
-    top: 10px; 
-    z-index: 1;       
+    top: 5px;      
 }
 
 .header-nav > ul {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50%; /* Zentrierung der UL-Liste vertikal */
-    transform: translateY(-50%); /* Zentrierung der UL-Liste vertikal */
-    right: 1.5rem; /* Abstand zum rechten Rand */
-    width: auto; /* Breite automatisch anpassen */
-    max-width: calc(100% - 6rem); /* Maximale Breite, um nicht über den rechten Rand zu gehen */
-    overflow: hidden; /* Überlauf verstecken */
+    top: .9rem;
+    right: 1.5rem;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
+/* 
 .header-nav > ul > li {
     display: inline-block;
-    padding: 0 .5rem; /* Raum zwischen den Menüelementen */
-}
+    padding: 0 .5rem; 
+} 
+*/
 
-.header-nav > ul > li > a {
+.header-nav a {
     color: #fff;
     text-decoration: none;
-    white-space: nowrap; /* Text wird nicht umgebrochen */
+    position: relative;
+    padding: 3px;
 }
 
-.header-nav > ul > li > a:hover {
-    color: #56C7F7;
+.header-nav a:hover {
+    color: #543e29;
 }
 
+.header-nav a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #543e29;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+  } 
+  .header-nav a:hover::after{
+    width: 100%;
+  }
+#toggle_button{
+    display: none;
+  }
+  label[for="toggle_button"]{
+    display: none;
+  }
+  label[for="toggle_button"] span{
+    font-size: 40px;
+  }
 /* === HEADER === */
 .container {
     width: 95%;
@@ -144,7 +166,26 @@ h3 {
 
 */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+
+    .header-nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--secondary-color);
+        padding: 15px;
+        border-radius: 0 0 25px 0;
+    }
+    .header-nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    label[for="toggle_button"]{
+        display: block;
+    }
+    #toggle_button:checked ~ ul{
+        display: flex;
+    }
 
     .col-1 { width: 100%;}
     .col-2 { width: 100%;}
