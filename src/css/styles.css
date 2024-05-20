@@ -136,19 +136,19 @@ label[for="toggle_button"]{
     margin: 4rem auto; /* Zentriert den Trennstrich */
 }
 
-
-
 /* === ABOUT ME === */
 
 #about-me-section {
-    padding: 150px 0;
+    padding: 150px 0 60px;
     background-color: #fff;
+}
 
+.content-wrapper {
+    padding-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-
     flex-wrap: wrap-reverse;
 }
 
@@ -164,7 +164,7 @@ label[for="toggle_button"]{
     filter: grayscale(100%);
   }
 
-  .about-me-container h2 {
+.about-me-container h2 {
     color: #543e29;
     font-size: 3rem;
 }
@@ -175,19 +175,67 @@ label[for="toggle_button"]{
     line-height: 175%;
   }
 
-#about-me-section hr{
+#about-me-section  hr{
     border: none;
     height: 2px;
-    background-color: #543e29;
-    width: 87%;
-    margin: 4rem auto;
+    background-color: #543e29; /* Farbe des Trennstrichs */
+    width: 87%; /* Breite des Trennstrichs */
+    margin: 4rem auto; /* Zentriert den Trennstrich */
 }
-
 /* === SKILLS === */
 
-.skills {
-    width: 95%;
-    margin: 1rem auto;
+.skills{
+    padding: 70px 0;
+    background-color: #A69270;
+  }
+.skills h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #543e29;
+  }
+.flex-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+  }
+.card{
+    color: #543e29;
+    width: 100%;
+    width: 400px;
+    max-width: calc(50% - 40px);
+    background-color: #968260;
+    border-radius: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+.card *{
+    text-align: center;
+  }
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.card img{
+    height: auto;
+    width: 100px;
+}
+.skills  hr{
+    border: none;
+    height: 2px;
+    background-color: #543e29; /* Farbe des Trennstrichs */
+    width: 87%; /* Breite des Trennstrichs */
+    margin: 4rem auto; /* Zentriert den Trennstrich */
 }
 
 /* 
@@ -248,4 +296,5 @@ label[for="toggle_button"]{
     .header-text {
         width: 70%;
     }
+
 }
