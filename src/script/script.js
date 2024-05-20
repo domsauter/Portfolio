@@ -1,13 +1,9 @@
 const greetings = {
     "de": ["Hallo,<br>", "ich bin Dominik"],
-    "ba": ["Servus,<br>", "i bin da Dominik"],
     "bw": ["Griaß Di,<br>", "i benn dr Dominik"],
     "en": ["Hi,<br>", "I'm Dominik"],
-    "it": ["Ciao,<br>", "Io sono Dominik"],
-    "es": ["Hola,<br>", "Soy Dominik"],
-    "pt": ["Oi,<br>", "Eu sou Dominik"],
-    "fr": ["Salut,<br>", "Je suis Dominik"],
-    "tr": ["Merhaba,<br>", "Ben Dominik'im"]
+    "es": ["Hola,<br>", "soy Dominik"],
+    "fr": ["Salut,<br>", "je suis Dominik"],
 };
 
 function getRandomGreeting() {
