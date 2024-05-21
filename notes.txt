@@ -1,2 +1,3 @@
 eingeschriebene animation bei der Vorstellung.
 about me auf englisch umschreiben 
+navleiste sticky machen.
