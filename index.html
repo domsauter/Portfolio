@@ -18,25 +18,27 @@
             <input type="checkbox" id="toggle_button">
             <label for="toggle_button">&#9776;</label>           </label>
             <ul>
-                <li><a href="#about-me-section">About me</a></li>
-                <li><a href="#projects-Section">Projects</a></li>
-                <li><a href="#contact-Section">Contact</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#social">Social</a></li>
             </ul>
         </nav>
 
         <!-- HEADER -->
         <div class="header">
             <div class="header-text">
-                <h1 id="greeting"><script src="src/script/script.js"></script></h1>
-                <p>Mechanical Engineer</p>
+                <h1 id="greeting"></h1>
+                <p id="title"></p>
             </div>  
             <div class="header-pic">
                 <img src="src/img/dominik02.JPG" alt="Ein Bild von Dominik Sauter">
             </div>  
             <hr>
         </div>
-            
-        <section id="about-me-section">
+        
+        <script src="src/script/script.js"></script>
+
+        <section id="about-me">
             <div class="content-wrapper">
                 <img src="src/img/dominik01.JPG" alt="Ein Bild von Dominik Sauter">
                 <div class="about-me-container">
@@ -64,29 +66,126 @@
                 <div class="card">
                     <h3>Frontend</h3>
                     <div class="images-container">
-                        <img src="src/icons/HTML.png" alt="Ein Logo, dass die Programmiersprache HTML darstellt"> 
-                        <img src="src/icons/CSS.png" alt="Ein Logo, dass die Programmiersprache CSS darstellt">
+                        <div class="icon">
+                            <img src="src/icons/HTML.svg" alt="Ein Logo, dass die Programmiersprache HTML darstellt"> 
+                            <span class="text">HTML</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/CSS.svg" alt="Ein Logo, dass die Programmiersprache CSS darstellt">
+                            <span class="text">CSS</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/JS.svg" alt="Ein Logo, dass die Programmiersprache JavaScript darstellt">
+                            <span class="text">JavaScript</span>
+                        </div>
                     </div>
                 </div>    
                 <div class="card">
                     <h3>Backend</h3>
                     <div class="images-container">
-                        <img src="src/icons/C.png" alt="Ein Logo, dass die Programmiersprache C darstellt"> 
-                        <img src="src/icons/Py.png" alt="Ein Logo, dass die Programmiersprache Python darstellt">
-                        <img src="src/icons/VBA.png" alt="Ein Logo, dass die Programmiersprache Visual Basics darstellt">
+                        <div class="icon">
+                            <img src="src/icons/C.svg" alt="Ein Logo, dass die Programmiersprache C darstellt"> 
+                            <span class="text">C</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/Py.svg" alt="Ein Logo, dass die Programmiersprache Python darstellt">
+                            <span class="text">Python</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/PostgreSQL.svg" alt="Ein Logo, dass die Programmiersprache Visual Basics darstellt">
+                            <span class="text">PostgreSQL</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <hr>
         </div>
 
-        <div class="projects">
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="flex-container">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <div class="images-container">
+                        <div class="icon">
+                            <img src="src/icons/HTML.svg" alt="Ein Logo, dass die Programmiersprache HTML darstellt"> 
+                            <span class="text">HTML</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/CSS.svg" alt="Ein Logo, dass die Programmiersprache CSS darstellt">
+                            <span class="text">CSS</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/JS.svg" alt="Ein Logo, dass die Programmiersprache JavaScript darstellt">
+                            <span class="text">JavaScript</span>
+                        </div>
+                    </div>
+                </div>    
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <div class="images-container">
+                        <div class="icon">
+                            <img src="src/icons/C.svg" alt="Ein Logo, dass die Programmiersprache C darstellt"> 
+                            <span class="text">C</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/Py.svg" alt="Ein Logo, dass die Programmiersprache Python darstellt">
+                            <span class="text">Python</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/PostgreSQL.svg" alt="Ein Logo, dass die Programmiersprache Visual Basics darstellt">
+                            <span class="text">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <div class="images-container">
+                        <div class="icon">
+                            <img src="src/icons/HTML.svg" alt="Ein Logo, dass die Programmiersprache HTML darstellt"> 
+                            <span class="text">HTML</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/CSS.svg" alt="Ein Logo, dass die Programmiersprache CSS darstellt">
+                            <span class="text">CSS</span>
+                        </div>
+                        <div class="icon">
+                            <img src="src/icons/JS.svg" alt="Ein Logo, dass die Programmiersprache JavaScript darstellt">
+                            <span class="text">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
 
-        </div>
-
-        <div class="contact">
-            
-        </div>
+        <footer id="social">
+            <h2>Mehr Informationen</h2>
+            <div class="grid_container">
+                <div id="item1" class="grid_item">
+                    <img src="src/icons/Social/Instagram.svg" alt="">
+                    <div>
+                        <h3>Instagram</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minima in, alias veritatis placeat cupiditate.</p>
+                    </div>
+                </div>
+                <div id="item2" class="grid_item">
+                    <img src="src/icons/Social/Github.svg">
+                    <h3>Github</h3>
+                </div>
+                <div id="item3" class="grid_item">
+                    <img src="src/icons/Social/Linkedin.svg">
+                    <h3>LinkedIn</h3>
+                </div>
+                <div id="item4" class="grid_item">
+                    <img src="images/youtube-svgrepo-com.svg">
+                    <div>
+                        <h3>Contact</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minima in, alias veritatis placeat cupiditate.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </body>
 
