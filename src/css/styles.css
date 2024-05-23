@@ -10,8 +10,8 @@ html {
 
 body {
     margin: 0;
-    background-color: #A69270;
-    color: #fff;
+    background-color: #FFF;
+    color: #203340;
     font-family: 'MeineSchriftart', sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
 .header-nav {
     width: 100%;
     height: 60px;
-    background-color: #968260;
+    background-color: #F7F7F7;
     position: relative;
     font-size: 1rem;
 }
@@ -44,21 +44,21 @@ body {
 }
 
 .header-nav a {
-    color: #fff;
+    color: #203340;
     text-decoration: none;
     position: relative;
     padding: 3px;
 }
 
 .header-nav a:hover {
-    color: #543e29;
+    color: #00A28E;
 }
 
 .header-nav a::after{
     content: '';
     height: 2px;
     width: 0%;
-    background: #543e29;
+    background: #00A28E;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -90,7 +90,7 @@ label[for="toggle_button"]{
 }
 
 .header #greeting {
-    color: #543e29;
+    color: #203340;
     margin-bottom: .5rem;
     font-size: 5rem;
 }
@@ -113,7 +113,7 @@ label[for="toggle_button"]{
 
     overflow: hidden;
     border-radius: 50%;
-    border: 2px solid #543e29;
+    border: 4px solid #00A28E;
 
     display: flex;
     justify-content: center;
@@ -131,14 +131,14 @@ label[for="toggle_button"]{
 .header hr{
     border: none;
     height: 2px;
-    background-color: #543e29; /* Farbe des Trennstrichs */
+    background-color: #00A28E; /* Farbe des Trennstrichs */
     width: 87%; /* Breite des Trennstrichs */
     margin: 4rem auto; /* Zentriert den Trennstrich */
 }
 /* === ÜBERGANG === */
 #title {
     position: relative; /* Position für das Pseudo-Element */
-    color: #fff; /* Weiße Schriftfarbe */
+    color: #00A28E; /* Weiße Schriftfarbe */
     background-color: transparent; /* Transparenter Hintergrund */
     display: inline-block; /* Inline-Block-Element für korrektes Einblenden */
 }
@@ -185,7 +185,7 @@ label[for="toggle_button"]{
 
 #about-me {
     padding: 150px 0 60px;
-    background-color: #fff;
+    background-color: #F7F7F7;
 }
 
 .content-wrapper {
@@ -205,17 +205,17 @@ label[for="toggle_button"]{
 #about-me img{
     width: 400px;
     max-width: calc(90% - 30px);
-    border: 2px solid #543e29;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
+    border: 4px solid #00A28E;
   }
 
 .about-me-container h2 {
-    color: #543e29;
+    color: #203340;
     font-size: 3rem;
 }
 
 .about-me-container p{
-    color: #543e29;
+    color: #203340;
     text-align: justify;
     line-height: 175%;
   }
@@ -223,7 +223,7 @@ label[for="toggle_button"]{
 #about-me  hr{
     border: none;
     height: 2px;
-    background-color: #543e29; /* Farbe des Trennstrichs */
+    background-color: #00A28E; /* Farbe des Trennstrichs */
     width: 87%; /* Breite des Trennstrichs */
     margin: 4rem auto; /* Zentriert den Trennstrich */
 }
@@ -231,17 +231,17 @@ label[for="toggle_button"]{
 
 .skills{
     padding: 70px 0;
-    background-color: #A69270;
+    background-color: #FFF;
   }
 .skills h2{
     font-size: 3rem;
     text-align: center;
-    color: #543e29;
+    color: #203340;
   }
 .skills h3{
     font-size: 2rem;
     text-align: center;
-    color: #543e29;
+    color: #203340;
   }
 .flex-container{
     margin-top: 50px;
@@ -255,11 +255,11 @@ label[for="toggle_button"]{
     padding-bottom: 60px;
   }
 .card{
-    color: #543e29;
+    color: #203340;
     width: 100%;
     width: 400px;
     max-width: calc(50% - 40px);
-    background-color: #968260;
+    background-color: #F7F7F7;
     border-radius: 100px;
     padding: 30px;
     display: flex;
@@ -283,7 +283,7 @@ label[for="toggle_button"]{
 .skills  hr{
     border: none;
     height: 2px;
-    background-color: #543e29; /* Farbe des Trennstrichs */
+    background-color: #00A28E; /* Farbe des Trennstrichs */
     width: 87%; /* Breite des Trennstrichs */
     margin: 4rem auto; /* Zentriert den Trennstrich */
 }
@@ -316,7 +316,7 @@ label[for="toggle_button"]{
 .icon .text {
     opacity: 0;
     font-size: 3rem;
-    color: #543e29; /* Textfarbe */
+    color: #203340; 
 }
 
 .icon:hover img {
@@ -330,22 +330,22 @@ label[for="toggle_button"]{
 /* === PROJECTS === */
 #projects {
     padding: 70px 0;
-    background-color: #fff;
+    background-color: #F7F7F7;
 }
 #projects h2{
     font-size: 3rem;
     text-align: center;
-    color: #543e29;
+    color: #203340;
   }
 #projects h3{
     font-size: 2rem;
     text-align: center;
-    color: #543e29;
+    color: #203340;
   }
 #projects hr{
     border: none;
     height: 2px;
-    background-color: #543e29; /* Farbe des Trennstrichs */
+    background-color: #00A28E; /* Farbe des Trennstrichs */
     width: 87%; /* Breite des Trennstrichs */
     margin: 4rem auto; /* Zentriert den Trennstrich */
 }
@@ -354,7 +354,7 @@ label[for="toggle_button"]{
 
 footer{
     padding: 70px 0;
-    background: #A69270;
+    background: #FFF;
   }
 footer h2{
     font-size: 50px;
@@ -374,7 +374,7 @@ footer h2{
     "item4 item3";
   }
 .grid_item{
-    background-color: #968260;
+    background-color: #F7F7F7;
     padding: 50px;
   
     display: flex;
@@ -483,7 +483,7 @@ footer h2{
         position: absolute;
         top: 100%;
         right: 0;
-        background: #968260;
+        background: #F7F7F7;
         padding: 15px;
         border-radius: 0 0 0 25px;
     }
