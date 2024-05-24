@@ -13,7 +13,7 @@
         <!-- NAVIGATIONSLEISTE -->
         <nav class="header-nav">
 
-            <img src="src/img/DS.svg" alt="Das Logo für mein Portfolio">
+            <img src="src/img/ds.svg" alt="Das Logo für mein Portfolio">
 
             <input type="checkbox" id="toggle_button">
             <label for="toggle_button">&#9776;</label>           </label>
@@ -23,6 +23,8 @@
                 <li><a href="#social">Social</a></li>
             </ul>
         </nav>
+
+        <script src="src/script/nav.js"></script>
 
         <!-- HEADER -->
         <div class="header">
@@ -44,16 +46,16 @@
                 <div class="about-me-container">
                     <h2>About Me</h2>
                     <p>
-                        Hallo! Ich bin Dominik Sauter, auch bekannt als Dome. Mit einem Abschluss als Bachelor of Engineering in Maschinenbau
-                        von der Hochschule Esslingen leite ich erfolgreich die Produktionsplanung, während ich gleichzeitig meine Leidenschaft
-                        für die Softwareentwicklung auslebe. In meiner Freizeit programmiere ich leidenschaftlich gerne und habe umfangreiche
-                        Erfahrung in verschiedenen Sprachen wie C, Python, VBA, HTML und CSS gesammelt. Zusätzlich verfüge ich über Kenntnisse
-                        in Datenbankmanagement mit PostgresQL sowie in Datenanalyse und statistischer Auswertung.<br>Meine Motivation schöpfe 
-                        ich aus der Möglichkeit, Ideen in die Tat umzusetzen und die neuesten Technologien zu nutzen,um Probleme effektiv zu lösen. 
-                        Dabei ist mir Qualität, Integrität und Teamarbeit besonders wichtig. Diese Werte leiten nicht nur meine Arbeit, sondern auch 
-                        mein persönliches Engagement im Bereich der Prozessoptimierung und der kontinuierlichen Verbesserung.<br>Abseits meiner
-                        beruflichen Tätigkeiten spiele ich leidenschaftlich gerne Fußball und setze meine Fähigkeiten als Entwickler in spannenden
-                        persönlichen Projekten ein. Ich glaube an Nachhaltigkeit und Innovation als Triebkräfte für eine bessere Zukunft.
+                        Hi, I'm Dominik Sauter, also known as Dome. With a Bachelor of Engineering degree in Mechanical Engineering from 
+                        Esslingen University of Applied Sciences, I successfully manage production planning, while at the same time living 
+                        out my passion for software development. In my spare time, I am passionate about programming and have gained extensive
+                        experience in various languages such as C, Python, VBA, HTML and CSS. I also have knowledge of database management 
+                        with PostgresQL as well as data analysis and statistical evaluation.<br>I am motivated by the opportunity to put ideas 
+                        into practice and use the latest technologies to solve problems effectively. Quality, integrity and teamwork are 
+                        particularly important to me. These values not only guide my work, but also my personal commitment to process optimization
+                        and continuous improvement.<br>Outside of my professional activities, I am passionate about playing soccer and using my 
+                        skills as a developer in exciting personal projects. I believe in sustainability and innovation as drivers for a better 
+                        future.
                     </p>
                 </div>
             </div>
@@ -103,58 +105,35 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="flex-container">
-                <div class="card">
-                    <h3>Project 1</h3>
-                    <div class="images-container">
-                        <div class="icon">
-                            <img src="src/icons/HTML.svg" alt="Ein Logo, dass die Programmiersprache HTML darstellt"> 
-                            <span class="text">HTML</span>
+            <div class="projects-wrap">
+                <img src="src/icons/leftButton.svg" alt="Button um nach links zu scrollen" id="leftButton">
+                <div class="flex-container">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <div class="images-container">
+                            <div class="icon">
+
+                            </div>
                         </div>
-                        <div class="icon">
-                            <img src="src/icons/CSS.svg" alt="Ein Logo, dass die Programmiersprache CSS darstellt">
-                            <span class="text">CSS</span>
-                        </div>
-                        <div class="icon">
-                            <img src="src/icons/JS.svg" alt="Ein Logo, dass die Programmiersprache JavaScript darstellt">
-                            <span class="text">JavaScript</span>
+                    </div>    
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <div class="images-container">
+                            <div class="icon">
+
+                            </div>
                         </div>
                     </div>
-                </div>    
-                <div class="card">
-                    <h3>Project 2</h3>
-                    <div class="images-container">
-                        <div class="icon">
-                            <img src="src/icons/C.svg" alt="Ein Logo, dass die Programmiersprache C darstellt"> 
-                            <span class="text">C</span>
-                        </div>
-                        <div class="icon">
-                            <img src="src/icons/Py.svg" alt="Ein Logo, dass die Programmiersprache Python darstellt">
-                            <span class="text">Python</span>
-                        </div>
-                        <div class="icon">
-                            <img src="src/icons/PostgreSQL.svg" alt="Ein Logo, dass die Programmiersprache Visual Basics darstellt">
-                            <span class="text">PostgreSQL</span>
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <div class="images-container">
+                            <div class="icon">
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <h3>Project 3</h3>
-                    <div class="images-container">
-                        <div class="icon">
-                            <img src="src/icons/HTML.svg" alt="Ein Logo, dass die Programmiersprache HTML darstellt"> 
-                            <span class="text">HTML</span>
-                        </div>
-                        <div class="icon">
-                            <img src="src/icons/CSS.svg" alt="Ein Logo, dass die Programmiersprache CSS darstellt">
-                            <span class="text">CSS</span>
-                        </div>
-                        <div class="icon">
-                            <img src="src/icons/JS.svg" alt="Ein Logo, dass die Programmiersprache JavaScript darstellt">
-                            <span class="text">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
+                <img src="src/icons/rightButton.svg" alt="Button um nach rechts zu scrollen" id="rightButton">
             </div>
             <hr>
         </section>

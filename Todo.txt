@@ -1,8 +1,6 @@
 eingeschriebene animation beim Header.
-about me auf englisch umschreiben 
-navleiste sticky machen.
 horizontal scrollen Projekte
 Kontakt Seite anpassen
-Farbkontraste anpassen
 animationen
 darkmode einfügen
+Bild am Schreibtisch beim programmieren
