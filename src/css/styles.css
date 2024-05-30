@@ -32,12 +32,12 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.header-nav > img {
+.header-nav img {
     height: 50px;
-    width: auto;    
+    width: auto;
     position: absolute;
     left: 1.5rem;
-    top: 5px;      
+    top: 5px;
 }
 
 .header-nav > ul {
@@ -51,18 +51,18 @@ body {
     gap: 20px;
 }
 
-.header-nav a {
+.header-nav ul a {
     color: #203340;
     text-decoration: none;
     position: relative;
     padding: 3px;
 }
 
-.header-nav a:hover {
+.header-nav ul a:hover {
     color: #00A28E;
 }
 
-.header-nav a::after{
+.header-nav ul a::after{
     content: '';
     height: 2px;
     width: 0%;
@@ -71,8 +71,8 @@ body {
     bottom: 0;
     left: 0;
     transition: 150ms ease-in-out;
-} 
-.header-nav a:hover::after{
+}
+.header-nav ul a:hover::after{
     width: 100%;
 }
 #toggle_button{
@@ -85,7 +85,6 @@ label[for="toggle_button"]{
 /* === HEADER === */
 .header {
     padding: 100px 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +105,7 @@ label[for="toggle_button"]{
 .header p {
     margin-top: 0;
 }
-/* 
+/*
 .header {
     padding: 1rem 1rem 3rem 1rem ;
     box-sizing: border-box;
@@ -324,7 +323,7 @@ label[for="toggle_button"]{
 .icon .text {
     opacity: 0;
     font-size: 3rem;
-    color: #203340; 
+    color: #203340;
 }
 
 .icon:hover img {
@@ -339,8 +338,7 @@ label[for="toggle_button"]{
 #projects {
     padding: 70px 0;
     background-color: #F7F7F7;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: hidden;
 }
 #projects h2{
     font-size: 3rem;
@@ -352,17 +350,20 @@ label[for="toggle_button"]{
     text-align: center;
     color: #203340;
   }
-#projects .flex-container {
+.projects-container {
     display: flex;
     gap: 1rem;
-    overflow-x: scroll;
     padding: 0 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
-#projects .project-card {
-    width: 350px;
-    padding: 20px;
+#projects .project-card { 
+    flex: 1 0 30%; /* Take up 30% of the container width */
+    padding: 1rem;
     background-color: white;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 .projects-wrap img {
     height: 2rem;
@@ -382,113 +383,26 @@ label[for="toggle_button"]{
 #projects hr{
     border: none;
     height: 2px;
-    background-color: #00A28E; /* Farbe des Trennstrichs */
-    width: 87%; /* Breite des Trennstrichs */
-    margin: 4rem auto; /* Zentriert den Trennstrich */
+    background-color: #00A28E;
+    width: 87%;
+    margin: 4rem auto;
 }
-#projects::-webkit-scrollbar{
+/* Hide scrollbar for Chrome, Safari, and Opera */
+#projects .projects-container::-webkit-scrollbar {
     display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+#projects .projects-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 /* === SOCIAL === */
 
-footer{
-    padding: 70px 0;
-    background: #FFF;
-  }
-footer h2{
-    font-size: 50px;
-    text-align: center;
-  }
-.grid_container{
-    margin: 60px auto;
-    width: 1500px;
-    max-width: 90%;
-  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
-    gap: 15px;
-    grid-template-areas: 
-    "item1 item1 item2 item3"
-    "item4 item3";
-  }
-.grid_item{
-    background-color: #F7F7F7;
-    padding: 50px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-.grid_item img{
-    height: 150px;
-    width: 150px;
-  }
-#item1{
-    grid-area: item1;
-  }
-#item2{
-    grid-area: item2;
-    flex-direction: column;
-    gap: 10px;
-  }
-#item3{
-    grid-area: item3;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-  }
-#item4{
-    grid-area: item4;
-    flex-direction: column;
-    gap: 10px;
-  }
 
-@media(max-width: 1300px){
-  
-    .grid_container{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 300px 300px 300px;
-    
-        grid-template-areas: 
-        "item1 item1 item2"
-        "item4 item5 item5"
-        "item3 item3 item3";
-    }
-  }
-@media(max-width: 900px){
-    
-    .grid_container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-    
-        grid-template-areas: 
-        "item1 item1"
-        "item5 item5"
-        "item2 item4"
-        "item3 item3";
-    }
-    
-  }
-@media(max-width: 650px){
-    footer h2{
-        font-size: 9vw;
-    }
-    .grid_item{
-        padding: 20px;
-    }
-    .grid_item img{
-        height: 100px;
-        width: 100px;
-    }
-    .grid_item h3{
-        font-size: 24px;
-    }    
-  }
-/* 
+
+/*
 === WICHTIGE BREAKPOINTS ===
 
 480px iPhone Querformat
@@ -509,6 +423,15 @@ footer h2{
     /* === HEADER === */
     .header #greeting {
         font-size: 4rem;
+    }
+
+    /* === PROJECTS === */
+    #projects .project-card {
+        flex: 1 0 45%; /* Take up 45% of the container width */
+    }
+
+    #leftButton, #rightButton {
+        width: 40px; /* Adjust button size */
     }
 }
 
@@ -553,4 +476,23 @@ footer h2{
         font-size: 1.5rem;
     }
 
+    /* === PROJECTS === */
+    #projects .projects-container {
+        gap: 0.5rem; /* Reduce gap between cards */
+    }
+
+    #projects .project-card {
+        flex: 1 0 900%; /* Take up 80% of the container width */
+    }
+
+    #leftButton, #rightButton {
+        width: 30px; /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* === PROJECTS === */
+    #projects .project-card {
+        flex: 1 0 100%; /* Take up 100% of the container width */
+    }
 }
