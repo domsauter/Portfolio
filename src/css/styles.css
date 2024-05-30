@@ -338,7 +338,7 @@ label[for="toggle_button"]{
 #projects {
     padding: 70px 0;
     background-color: #F7F7F7;
-    overflow-x: hidden;
+    text-align: center;
 }
 #projects h2{
     font-size: 3rem;
@@ -354,12 +354,16 @@ label[for="toggle_button"]{
     display: flex;
     gap: 1rem;
     padding: 0 1rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    justify-content: flex-start; /* Center items */
+    flex-wrap: nowrap;
+    max-width: 900px; /* Add a max-width to contain the cards */
+    margin: 0 auto; /* Center the container */
 }
 #projects .project-card { 
-    flex: 0 0 calc((100% / 3) - (2 / 3 * 1rem));
+    flex: 0 0 33.333%;
+    max-width: 300px;
     padding: 1rem;
     background-color: white;
     border-radius: 8px;
@@ -427,7 +431,8 @@ label[for="toggle_button"]{
 
     /* === PROJECTS === */
     #projects .project-card {
-        flex: 1 0 45%; /* Take up 45% of the container width */
+        flex: 0 0 50%;
+        max-width: 250px; /* Remove max-width on smaller screens */
     }
 
     #leftButton, #rightButton {
@@ -482,7 +487,9 @@ label[for="toggle_button"]{
     }
 
     #projects .project-card {
-        flex: 1 0 900%; /* Take up 80% of the container width */
+        flex: 0 0 90%;
+        max-width: 200px;
+        margin-right: 0.5rem; /* Add margin to avoid cutoff */
     }
 
     #leftButton, #rightButton {
@@ -493,6 +500,8 @@ label[for="toggle_button"]{
 @media (max-width: 480px) {
     /* === PROJECTS === */
     #projects .project-card {
-        flex: 1 0 100%; /* Take up 100% of the container width */
+        flex: 0 0 90%; /* Adjust to almost full width on very small screens */
+        max-width: none; /* Remove max-width on smaller screens */
+        margin-right: 0.5rem; /* Add margin to avoid cutoff */
     }
 }
