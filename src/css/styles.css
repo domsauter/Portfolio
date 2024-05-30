@@ -359,7 +359,7 @@ label[for="toggle_button"]{
     scroll-behavior: smooth;
 }
 #projects .project-card { 
-    flex: 1 0 30%; /* Take up 30% of the container width */
+    flex: 0 0 calc((100% / 3) - (2 / 3 * 1rem));
     padding: 1rem;
     background-color: white;
     border-radius: 8px;
