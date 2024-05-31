@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
         <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="src/css/swiper-bundle.min.css">
     </head>
 
     <body>
@@ -105,67 +106,62 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="projects-wrap">
-                <img src="src/icons/leftButton.svg" alt="Button um nach links zu scrollen" id="leftButton">
-                <div class="projects-container">
-                    <div class="project-card">
-                        <h3>Project 1</h3>
-                        <div class="images-container">
-                            <div class="icon">
-
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="project-card swiper-slide">
+                            <h3>Project 1</h3>
+                            <div class="images-container">
+                                <div class="icon">
+                                    <img src="src/icons/Js.svg" alt="">
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="project-card">
+                            <h3>Project 2</h3>
+                            <div class="images-container">
+                                <div class="icon">
+                                    <img src="src/icons/Js.svg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>    
-                    <div class="project-card">
-                        <h3>Project 2</h3>
-                        <div class="images-container">
-                            <div class="icon">
-
+                        <div class="project-card">
+                            <h3>Project 3</h3>
+                            <div class="images-container">
+                                <div class="icon">
+                                    <img src="src/icons/Js.svg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 3</h3>
-                        <div class="images-container">
-                            <div class="icon">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 4</h3>
-                        <div class="images-container">
-                            <div class="icon">
-
+                        <div class="project-card">
+                            <h3>Project 4</h3>
+                            <div class="images-container">
+                                <div class="icon">
+                                    <img src="src/icons/Js.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="src/icons/rightButton.svg" alt="Button um nach rechts zu scrollen" id="rightButton">
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <hr>
         </section>
 
-        <script src="src/script/scrollX.js"></script>
-
         <footer id="social">
             <h2>Social</h2>
-            <div class="grid_container">
-                <div id="item1" class="grid_item">
-                    <img src="src/icons/Social/Instagram.svg" alt="">
-                    <div>
-                        <h3>Instagram</h3>
-                    </div>
-                </div>
-                <div id="item2" class="grid_item">
+            <div class="grid-container">
+                <div class="grid-item">
                     <img src="src/icons/Social/Github.svg">
                     <h3>Github</h3>
                 </div>
-                <div id="item3" class="grid_item">
+                <div class="grid-item">
                     <img src="src/icons/Social/Linkedin.svg">
                     <h3>LinkedIn</h3>
                 </div>
-                <div id="item4" class="grid_item">
+                <div class="grid-item">
                     <img src="images/youtube-svgrepo-com.svg">
                     <div>
                         <img src="src/icons/Social/eMail.svg">
@@ -176,5 +172,6 @@
         </footer>
 
     </body>
-
+    <script src="src/script/swiper-bundle.min.js"></script>
+    <script src="src/script/scrollX.js"></script>
 </html>
