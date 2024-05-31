@@ -515,12 +515,23 @@ label[for="toggle_button"]{
     font-size: .6rem;
     margin: 0;
 }
-.grid-item a:hover .social-icon {
-    filter: brightness(0) saturate(100%) invert(46%) sepia(19%) saturate(2782%) hue-rotate(126deg) brightness(97%) contrast(93%);
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+#projects .projects-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
+/* === SOCIAL === */
 
 
+
+/*
+=== WICHTIGE BREAKPOINTS ===
+
+480px iPhone Querformat
+768px iPad Hochformat
+1024px iPad Querformat
 
 @media (max-width: 1024px) {
     /* === PROJECTS=== */
