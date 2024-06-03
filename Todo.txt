@@ -1,8 +1,3 @@
 Bild am Schreibtisch beim programmieren
-horizontal scrollen Projekte 
-    - Kartengrößen anpassen, vor allem fürs responsive 
-    - keine Karten abschneiden, immer nur volle Karten anzeigen
-Kontakt Seite anpassen
-animationen
 darkmode einfügen
 eingeschriebene animation beim Header.
