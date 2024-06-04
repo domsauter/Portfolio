@@ -103,14 +103,26 @@ label[for="toggle_button"]{
     gap: 50px;
 }
 
-.header-text {
+.header-text h1{
     width: 850px;
+    color: var(--color-secondary);
+    margin: .5rem 0;
+    font-size: 3rem;
 }
 
-.header #greeting {
-    color: var(--color-secondary);
-    margin-bottom: .5rem;
-    font-size: 5rem;
+.header-text span {
+    font-size: 2rem;
+}
+
+#profession {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.typed-cursor {
+    color: var(--color-primary); /* Passe diese Farbe an deine gewünschte Farbe an */
+    font-size: 2rem; /* Passe diese Größe an die Schriftgröße von #profession an */
+    font-weight: bold; /* Passe das Gewicht an, falls erforderlich */
 }
 
 .header p {
@@ -144,51 +156,6 @@ label[for="toggle_button"]{
     background-color: var(--color-primary);
     width: 87%;
     margin: 4rem auto;
-}
-
-/* === ÜBERGANG === */
-#title {
-    position: relative;
-    color: var(--color-primary);
-    background-color: transparent;
-    display: inline-block;
-}
-
-#title::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-primary);
-    transition: width 0.3s ease-in-out;
-}
-
-.fade-in::before {
-    width: 100%;
-}
-
-.typing {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid transparent;
-    animation: typing 5s linear forwards, blink-caret .75s step-end 5s infinite;
-}
-
-@keyframes typing {
-    0% { width: 0; }
-    100% { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: var(--color-primary); }
-}
-
-.fade-in {
-    opacity: 1;
 }
 
 /* === ABOUT ME === */
@@ -237,21 +204,21 @@ label[for="toggle_button"]{
 }
 
 /* === SKILLS === */
-.skills{
+#skills{
     padding: 70px 0;
     background-color: var(--color-background);
 }
 
-.skills h2, .skills h3 {
+#skills h2, .skills h3 {
     text-align: center;
     color: var(--color-secondary);
 }
 
-.skills h2 {
+#skills h2 {
     font-size: 3rem;
 }
 
-.skills h3 {
+#skills h3 {
     font-size: 2rem;
 }
 
@@ -267,13 +234,13 @@ label[for="toggle_button"]{
     padding-bottom: 60px;
 }
 
-.skills .card{
+#skills .card{
     color: var(--color-secondary);
     width: 100%;
     width: 400px;
     max-width: calc(50% - 40px);
     background-color: var(--color-background-alt);
-    border-radius: 100px;
+    border-radius: 20px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -281,7 +248,7 @@ label[for="toggle_button"]{
     gap: 20px;
 }
 
-.skills .card *{
+#skills .card *{
     text-align: center;
 }
 
@@ -292,12 +259,12 @@ label[for="toggle_button"]{
     flex-wrap: wrap;
 }
 
-.skills .card img{
+#skills .card img{
     height: auto;
     width: 100px;
 }
 
-.skills hr{
+#skills hr{
     border: none;
     height: 2px;
     background-color: var(--color-primary);
@@ -510,8 +477,8 @@ label[for="toggle_button"]{
 
 #social h2 {
     color: var(--color-secondary); /* Überschriftenfarbe */
-    font-size: 1.5em; /* Schriftgröße der Überschrift */
-    margin-bottom: 20px; /* Abstand unter der Überschrift */
+    font-size: 3rem; /* Schriftgröße der Überschrift */
+    margin-bottom: 2rem; /* Abstand unter der Überschrift */
 }
 
 .grid-container {
@@ -532,12 +499,17 @@ label[for="toggle_button"]{
 }
 
 .grid-item h3 {
-    color: #666; /* Farbe der Überschrift */
+    color: var(--color-secondary); /* Farbe der Überschrift */
     font-size: 1.2em; /* Schriftgröße der Überschrift */
     margin: 0; /* Kein Abstand oben oder unten */
 }
-
-
+#social hr{
+    border: none;
+    height: 2px;
+    background-color: var(--color-primary);
+    width: 87%;
+    margin: 4rem auto;
+}
 
 /*
 === WICHTIGE BREAKPOINTS ===
