@@ -317,10 +317,56 @@ label[for="toggle_button"]{
 /* === PROJECTS === */
 #projects {
     padding: 70px 0;
+<<<<<<< HEAD
+    background-color: #F7F7F7;
+    overflow-x: hidden;
+}
+#projects h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #203340;
+  }
+#projects h3{
+    font-size: 2rem;
+    text-align: center;
+    color: #203340;
+  }
+.projects-container {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+#projects .project-card { 
+    flex: 0 0 calc((100% / 3) - (2 / 3 * 1rem));
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.projects-wrap img {
+    height: 2rem;
+    width: auto;
+}
+.projects-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+#leftButton, #rightButton{
+    width: 50px;
+    cursor: pointer;
+    margin: 2rem;
+}
+=======
     background: var(--color-background-alt);
     text-align: center;
 }
 
+>>>>>>> feature-branch
 #projects hr{
     border: none;
     height: 2px;
@@ -328,7 +374,17 @@ label[for="toggle_button"]{
     width: 87%;
     margin: 4rem auto;
 }
+/* Hide scrollbar for Chrome, Safari, and Opera */
+#projects .projects-container::-webkit-scrollbar {
+    display: none;
+}
 
+<<<<<<< HEAD
+/* Hide scrollbar for IE, Edge, and Firefox */
+#projects .projects-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+=======
 #projects h2{
     font-size: 3rem;
     color: var(--color-secondary);
@@ -462,10 +518,9 @@ label[for="toggle_button"]{
 .swiper-button-next:hover, .swiper-button-prev:hover{
     opacity: 1;
     
+>>>>>>> feature-branch
 }
-.card-content .image a:hover img {
-    filter: brightness(0) saturate(100%) invert(46%) sepia(19%) saturate(2782%) hue-rotate(126deg) brightness(97%) contrast(93%);
-  }
+
 /* === SOCIAL === */
 #social {
     background-color: var(--color-background);
@@ -545,6 +600,30 @@ label[for="toggle_button"]{
 1024px iPad Querformat
 
 @media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+*/
+
+@media (max-width: 1024px) {
+    /* === HEADER === */
+    .header #greeting {
+        font-size: 4rem;
+    }
+<<<<<<< HEAD
+
+    /* === PROJECTS === */
+    #projects .project-card {
+        flex: 1 0 45%; /* Take up 45% of the container width */
+    }
+
+    #leftButton, #rightButton {
+        width: 40px; /* Adjust button size */
+=======
     /* === PROJECTS=== */
     #projects > div{
         max-width: 900px;
@@ -560,6 +639,7 @@ label[for="toggle_button"]{
     }
     .swiper{
         width: 550px;
+>>>>>>> feature-branch
     }
 
     /* === PROJECTS === */
@@ -630,6 +710,7 @@ label[for="toggle_button"]{
     .icon .text{
         font-size: 1.5rem;
     }
+<<<<<<< HEAD
 
     /* === PROJECTS === */
     #projects .projects-container {
@@ -649,7 +730,7 @@ label[for="toggle_button"]{
     /* === PROJECTS === */
     #projects .project-card {
         flex: 1 0 100%; /* Take up 100% of the container width */
-    }
+=======
 }
 @media (max-width: 650px) {
     /* === PROJECTS=== */
@@ -658,22 +739,7 @@ label[for="toggle_button"]{
     }
     .swiper{
         width: 350px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* === PROJECTS=== */
-    .swiper-button-next, .swiper-button-prev{
-        display: none;
-    }
-}
-@media (max-width: 650px) {
-    /* === PROJECTS=== */
-    #projects > div{
-        max-width: 500;
-    }
-    .swiper{
-        width: 350px;
+>>>>>>> feature-branch
     }
 }
 
