@@ -21,6 +21,7 @@ body {
     color: var(--color-secondary);
     font-family: 'MeineSchriftart', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -104,7 +105,7 @@ label[for="toggle_button"]{
 }
 
 .header-text h1{
-    width: 850px;
+    width: 70%;
     color: var(--color-secondary);
     margin: .5rem 0;
     font-size: 3rem;
@@ -120,9 +121,9 @@ label[for="toggle_button"]{
 }
 
 .typed-cursor {
-    color: var(--color-primary); /* Passe diese Farbe an deine gewünschte Farbe an */
-    font-size: 2rem; /* Passe diese Größe an die Schriftgröße von #profession an */
-    font-weight: bold; /* Passe das Gewicht an, falls erforderlich */
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .header p {
@@ -342,11 +343,11 @@ label[for="toggle_button"]{
 
 #projects > div{
     display: flex;
-    justify-content: center; /* Zentriert den Inhalt horizontal */
-    align-items: center;    /* Zentriert den Inhalt vertikal */
-    max-width: 1200px;      /* Maximale Breite der Projektcontainer */
-    margin: 0 auto;         /* Zentriert den Projektcontainer selbst */
-    position: relative;     /* Position für die relative Positionierung des Swipers */
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .swiper{
@@ -360,7 +361,6 @@ label[for="toggle_button"]{
     height: 320px;
     margin: 20px 0;
 }
-
 #projects .card::before{
     content: "";
     position: absolute;
@@ -378,27 +378,17 @@ label[for="toggle_button"]{
     z-index: 100;
 }
   
-#projects .card .image{
-    height: 140px;
-    width: 140px;
-    border-radius: 20%;
-    background: var(--color-background-alt);
-    margin-top: 30px;
-}
-  
 #projects .card .image img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20%;
-    border: 3px solid var(--color-background);
+    margin-top: 30px;
+    height: 70px;
+    width: auto;
 }
   
 #projects .card .media-icons {
     position: absolute;
     top: 5%;
-    left: 50%; /* Zentriert die Icons horizontal */
-    transform: translateX(-50%); /* Korrigiert die Position um die Hälfte der Breite nach links */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -422,22 +412,27 @@ label[for="toggle_button"]{
     opacity: 1;
 }
   
-#projects .card .name-profession{
+#projects .card .project-description{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: .5rem;
     color: var(--color-secondary);
 } 
   
-.name-profession .name{
-    font-size: 20px;
+.project-description .project{
     font-weight: 600;
 }
   
-.name-profession .profession{
-    font-size:15px;
+.project-description .description{
+    margin-top: .5rem;
+    font-size: .8rem;
     font-weight: 500;
+}
+.project-description .project-year{
+    margin-top: .5rem;
+    font-size:.7rem;
+    font-weight: bold;
 }
   
 .button button:hover{
@@ -468,40 +463,43 @@ label[for="toggle_button"]{
     opacity: 1;
     
 }
+.card-content .image a:hover img {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(19%) saturate(2782%) hue-rotate(126deg) brightness(97%) contrast(93%);
+  }
 /* === SOCIAL === */
 #social {
-    background-color: var(--color-background); /* Hintergrundfarbe */
-    padding: 20px; /* Innenabstand */
-    text-align: center; /* Zentrierter Text */
+    background-color: var(--color-background);
+    padding: 20px;
+    text-align: center;
 }
 
 #social h2 {
-    color: var(--color-secondary); /* Überschriftenfarbe */
-    font-size: 3rem; /* Schriftgröße der Überschrift */
-    margin-bottom: 2rem; /* Abstand unter der Überschrift */
+    color: var(--color-secondary);
+    font-size: 3rem;
+    margin-bottom: 2rem; 
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
-    gap: 20px; /* Abstand zwischen den Elementen */
-    justify-items: center; /* Zentriert in jeder Spalte */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
 }
 
 .grid-item {
-    text-align: center; /* Zentrierter Text */
+    text-align: center;
 }
 
 .grid-item img {
-    width: 50px; /* Größe der Icons */
+    width: 50px;
     height: 50px;
-    margin-bottom: 10px; /* Abstand unter dem Icon */
+    margin-bottom: 10px; 
 }
 
 .grid-item h3 {
-    color: var(--color-secondary); /* Farbe der Überschrift */
-    font-size: 1.2em; /* Schriftgröße der Überschrift */
-    margin: 0; /* Kein Abstand oben oder unten */
+    color: var(--color-secondary);
+    font-size: 1.2em;
+    margin: 0;
 }
 #social hr{
     border: none;
@@ -510,29 +508,21 @@ label[for="toggle_button"]{
     width: 87%;
     margin: 4rem auto;
 }
-
-/*
-=== WICHTIGE BREAKPOINTS ===
-
-480px iPhone Querformat
-768px iPad Hochformat
-1024px iPad Querformat
-
-@media (max-width: 1024px) {
-
+#social p {
+    margin: 0;
+}
+#social > p {
+    font-size: .6rem;
+    margin: 0;
+}
+.grid-item a:hover .social-icon {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(19%) saturate(2782%) hue-rotate(126deg) brightness(97%) contrast(93%);
 }
 
-@media (max-width: 768px) {
 
-}
 
-*/
 
 @media (max-width: 1024px) {
-    /* === HEADER === */
-    .header #greeting {
-        font-size: 4rem;
-    }
     /* === PROJECTS=== */
     #projects > div{
         max-width: 900px;
@@ -567,8 +557,8 @@ label[for="toggle_button"]{
         right: 0;
         background-color: var(--color-background-alt);
         padding: 10px;
-        border-radius: 10px; /* Anpassung der abgerundeten Ecken */
-        z-index: 1000; /* Z-Index für die Stapelreihenfolge anpassen */
+        border-radius: 10px;
+        z-index: 1000;
         transition: transform 0.3s ease;
         transform-origin: top right;
     }
@@ -581,7 +571,7 @@ label[for="toggle_button"]{
     }
     
     .header-nav ul a:hover {
-        color: var(--color-primary); /* Textfarbe bei Hover */
+        color: var(--color-primary);
     }
     
     label[for="toggle_button"]{
@@ -594,14 +584,6 @@ label[for="toggle_button"]{
     }
     #toggle_button:checked ~ ul{
         display: flex;
-    }
-
-    /* === HEADER === */
-    .header #greeting {
-        font-size: 3rem;
-    }
-    .header-text {
-        width: 70%;
     }
 
     /* === SKILLS === */
@@ -625,5 +607,12 @@ label[for="toggle_button"]{
     }
     .swiper{
         width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* === PROJECTS=== */
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
     }
 }
