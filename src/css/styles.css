@@ -93,6 +93,10 @@ body {
 label[for="toggle_button"]{
     display: none;
 }
+#toggle_button:checked + ul {
+    display: flex;
+    flex-direction: column;
+}
 
 /* === HEADER === */
 .header {
@@ -520,8 +524,6 @@ label[for="toggle_button"]{
 }
 
 
-
-
 @media (max-width: 1024px) {
     /* === PROJECTS=== */
     #projects > div{
@@ -545,10 +547,6 @@ label[for="toggle_button"]{
         font-size: 16px;
     }
     /* === NAVIGATIONSLEISTE === */
-    .header-nav{
-        position: sticky;
-        top: 0;
-    }
     .header-nav ul {
         display: none;
         flex-direction: column;
@@ -559,22 +557,9 @@ label[for="toggle_button"]{
         padding: 10px;
         border-radius: 10px;
         z-index: 1000;
-        transition: transform 0.3s ease;
-        transform-origin: top right;
     }
-    
-    .header-nav ul a {
-        display: block;
-        color: var(--color-text);
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-    
-    .header-nav ul a:hover {
-        color: var(--color-primary);
-    }
-    
-    label[for="toggle_button"]{
+
+    label[for="toggle_button"] {
         display: block;
         position: absolute;
         top: .45rem;
@@ -582,7 +567,8 @@ label[for="toggle_button"]{
         cursor: pointer;
         font-size: 1.5rem;
     }
-    #toggle_button:checked ~ ul{
+
+    #toggle_button:checked ~ ul {
         display: flex;
     }
 
@@ -607,6 +593,10 @@ label[for="toggle_button"]{
     }
     .swiper{
         width: 350px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 

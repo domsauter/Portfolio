@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var hideTimeout;
     var isHovering = false;
 
-    // Event Listener für das Scrollen
-    window.addEventListener("scroll", function() {
+    // Event Listener für das Scrollen (inklusive touchmove für Touch-Geräte)
+    function handleScroll() {
         var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
         // Beim Hochscrollen oder wenn die Maus nicht über der Navigation ist
@@ -33,7 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Negative scroll Werte vermeiden
-    }, false);
+    }
+
+    window.addEventListener("scroll", handleScroll, false);
+    window.addEventListener("touchmove", handleScroll, false);
 
     // Event Listener für das Schweben über der Navigation
     headerNav.addEventListener("mouseenter", function() {
