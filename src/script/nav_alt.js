@@ -35,8 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Negative scroll Werte vermeiden
     }
 
+    function handleTouchStart(event) {
+        lastScrollTop = window.scrollY || document.documentElement.scrollTop;
+    }
+
     window.addEventListener("scroll", handleScroll, false);
     window.addEventListener("touchmove", handleScroll, false);
+    window.addEventListener("touchstart", handleTouchStart, false);
 
     // Event Listener für das Schweben über der Navigation
     headerNav.addEventListener("mouseenter", function() {
