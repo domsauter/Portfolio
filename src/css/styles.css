@@ -555,7 +555,7 @@ label[for="toggle_button"]{
         top: 100%;
         width: 100%;
         right: 0;
-        background-color: var(--color-background);
+        background-color: var(--color-background-nav);
         padding: 10px;
         z-index: 1000;
     }
