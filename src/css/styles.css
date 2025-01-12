@@ -305,11 +305,10 @@ label[for="toggle_button"]{
     height: auto;
 }
 
-/* .icon .text {
+.icon .text {
     opacity: 0;
-    font-size: 1.5rem;
     color: var(--color-secondary);
-} */
+}
 
 .icon:hover img {
     opacity: 0;
