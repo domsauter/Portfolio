@@ -284,6 +284,9 @@ label[for="toggle_button"]{
     height: 100px;
     transition: transform 0.3s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon img,
