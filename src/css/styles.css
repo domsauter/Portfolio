@@ -169,7 +169,7 @@ label[for="toggle_button"]{
     top: -30px;
 }
 
-.header hr{
+hr{
     border: none;
     height: 2px;
     background-color: var(--color-primary);
@@ -207,14 +207,6 @@ label[for="toggle_button"]{
     color: var(--color-secondary);
     text-align: justify;
     line-height: 175%;
-}
-
-#about-me hr{
-    border: none;
-    height: 2px;
-    background-color: var(--color-primary);
-    width: 87%;
-    margin: 4rem auto;
 }
 
 /* === SKILLS === */
@@ -265,14 +257,6 @@ label[for="toggle_button"]{
     width: 100px;
 }
 
-#skills hr{
-    border: none;
-    height: 2px;
-    background-color: var(--color-primary);
-    width: 87%;
-    margin: 4rem auto;
-}
-
 .icon {
     position: relative;
     width: 100px;
@@ -321,14 +305,6 @@ label[for="toggle_button"]{
     padding: 70px 0;
     background: var(--color-background-alt);
     text-align: center;
-}
-
-#projects hr{
-    border: none;
-    height: 2px;
-    background-color: var(--color-primary);
-    width: 87%;
-    margin: 4rem auto;
 }
 
 #projects h3{
@@ -491,13 +467,7 @@ label[for="toggle_button"]{
     font-size: 1.2em;
     margin: 0;
 }
-#social hr{
-    border: none;
-    height: 2px;
-    background-color: var(--color-primary);
-    width: 87%;
-    margin: 4rem auto;
-}
+
 #social p {
     margin: 0;
 }
